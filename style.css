@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  color: rgb(191, 207, 232);
+}
+
+html {
+  background: url('./background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.clock-face {
+  height: 500px;
+  width: 500px;
+  border: 20px solid white;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: -10px 0px 10px 0px rgba(3, 3, 3, 0.484);
+}
+
+.hand {
+  position: absolute;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  box-shadow: -10px 0px 10px 0px rgba(3, 3, 3, 0.484);
+  border: 5px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.center {
+  top: 255px;
+  left: 240px;
+  border: 10px solid white;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.hour-hand {
+  top: 250px;
+  left: 110px;
+  width: 140px;
+}
+
+.min-hand {
+  top: 250px;
+  left: 50px;
+  width: 200px;
+}
+
+.sec-hand {
+  top: 250px;
+  left: 80px;
+  width: 170px;
+}
+
+.signature {
+  font-family: 'Dancing Script', cursive;
+  margin-top: 4rem;
+  letter-spacing: 1px;
+}
